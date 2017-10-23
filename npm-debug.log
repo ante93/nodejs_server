@@ -1,0 +1,885 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install', 'ejs' ]
+2 info using npm@2.14.12
+3 info using node@v4.3.2
+4 verbose install initial load of /home/pi/Desktop/nodejs/package.json
+5 warn package.json nodejs@1.0.0 No repository field.
+6 warn package.json nodejs@1.0.0 No README data
+7 verbose installManyTop reading scoped package data from /home/pi/Desktop/nodejs/node_modules/ejs/package.json
+8 verbose installManyTop reading scoped package data from /home/pi/Desktop/nodejs/node_modules/express/package.json
+9 verbose installManyTop reading scoped package data from /home/pi/Desktop/nodejs/node_modules/node-cmd/package.json
+10 verbose installManyTop reading scoped package data from /home/pi/Desktop/nodejs/node_modules/nodemon/package.json
+11 info package.json node-cmd@3.0.0 license should be a valid SPDX license expression
+12 verbose readDependencies loading dependencies from /home/pi/Desktop/nodejs/package.json
+13 verbose install ejs is installed as 2.5.7
+14 silly cache add args [ 'ejs', null ]
+15 verbose cache add spec ejs
+16 silly cache add parsed spec Result {
+16 silly cache add   raw: 'ejs',
+16 silly cache add   scope: null,
+16 silly cache add   name: 'ejs',
+16 silly cache add   rawSpec: '',
+16 silly cache add   spec: 'latest',
+16 silly cache add   type: 'tag' }
+17 silly addNamed ejs@latest
+18 verbose addNamed "latest" is being treated as a dist-tag for ejs
+19 info addNameTag [ 'ejs', 'latest' ]
+20 silly mapToRegistry name ejs
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/ejs
+24 verbose addNameTag registry:https://registry.npmjs.org/ejs not in flight; fetching
+25 verbose request uri https://registry.npmjs.org/ejs
+26 verbose request no auth needed
+27 info attempt registry request try #1 at 21:28:07
+28 verbose request id f2c33a39e5e4817c
+29 verbose etag W/"59e1c203-1134e"
+30 verbose lastModified Sat, 14 Oct 2017 07:51:31 GMT
+31 http request GET https://registry.npmjs.org/ejs
+32 http 304 https://registry.npmjs.org/ejs
+33 verbose headers { date: 'Mon, 16 Oct 2017 19:28:07 GMT',
+33 verbose headers   via: '1.1 varnish',
+33 verbose headers   'cache-control': 'max-age=300',
+33 verbose headers   etag: 'W/"59e1c203-1134e"',
+33 verbose headers   age: '50',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'x-served-by': 'cache-hhn1534-HHN',
+33 verbose headers   'x-cache': 'HIT',
+33 verbose headers   'x-cache-hits': '1',
+33 verbose headers   'x-timer': 'S1508182088.537677,VS0,VE0',
+33 verbose headers   vary: 'Accept-Encoding, Accept' }
+34 silly get cb [ 304,
+34 silly get   { date: 'Mon, 16 Oct 2017 19:28:07 GMT',
+34 silly get     via: '1.1 varnish',
+34 silly get     'cache-control': 'max-age=300',
+34 silly get     etag: 'W/"59e1c203-1134e"',
+34 silly get     age: '50',
+34 silly get     connection: 'keep-alive',
+34 silly get     'x-served-by': 'cache-hhn1534-HHN',
+34 silly get     'x-cache': 'HIT',
+34 silly get     'x-cache-hits': '1',
+34 silly get     'x-timer': 'S1508182088.537677,VS0,VE0',
+34 silly get     vary: 'Accept-Encoding, Accept' } ]
+35 verbose etag https://registry.npmjs.org/ejs from cache
+36 verbose get saving ejs to /root/.npm/registry.npmjs.org/ejs/.cache.json
+37 silly addNameTag next cb for ejs with tag latest
+38 silly addNamed ejs@2.5.7
+39 verbose addNamed "2.5.7" is a plain semver version for ejs
+40 silly cache afterAdd ejs@2.5.7
+41 verbose afterAdd /root/.npm/ejs/2.5.7/package/package.json not in flight; writing
+42 verbose afterAdd /root/.npm/ejs/2.5.7/package/package.json written
+43 silly install resolved [ { name: 'ejs',
+43 silly install resolved     description: 'Embedded JavaScript templates',
+43 silly install resolved     keywords: [ 'template', 'engine', 'ejs' ],
+43 silly install resolved     version: '2.5.7',
+43 silly install resolved     author:
+43 silly install resolved      { name: 'Matthew Eernisse',
+43 silly install resolved        email: 'mde@fleegix.org',
+43 silly install resolved        url: 'http://fleegix.org' },
+43 silly install resolved     contributors: [ [Object] ],
+43 silly install resolved     license: 'Apache-2.0',
+43 silly install resolved     main: './lib/ejs.js',
+43 silly install resolved     repository: { type: 'git', url: 'git://github.com/mde/ejs.git' },
+43 silly install resolved     bugs: { url: 'https://github.com/mde/ejs/issues' },
+43 silly install resolved     homepage: 'https://github.com/mde/ejs',
+43 silly install resolved     dependencies: {},
+43 silly install resolved     devDependencies:
+43 silly install resolved      { browserify: '^13.0.1',
+43 silly install resolved        eslint: '^3.0.0',
+43 silly install resolved        'git-directory-deploy': '^1.5.1',
+43 silly install resolved        istanbul: '~0.4.3',
+43 silly install resolved        jake: '^8.0.0',
+43 silly install resolved        jsdoc: '^3.4.0',
+43 silly install resolved        'lru-cache': '^4.0.1',
+43 silly install resolved        mocha: '^3.0.2',
+43 silly install resolved        'uglify-js': '^2.6.2' },
+43 silly install resolved     engines: { node: '>=0.10.0' },
+43 silly install resolved     scripts:
+43 silly install resolved      { test: 'jake test',
+43 silly install resolved        lint: 'eslint "**/*.js" Jakefile',
+43 silly install resolved        coverage: 'istanbul cover node_modules/mocha/bin/_mocha',
+43 silly install resolved        doc: 'jake doc',
+43 silly install resolved        devdoc: 'jake doc[dev]' },
+43 silly install resolved     _id: 'ejs@2.5.7',
+43 silly install resolved     _shasum: 'cc872c168880ae3c7189762fd5ffc00896c9518a',
+43 silly install resolved     _resolved: 'https://registry.npmjs.org/ejs/-/ejs-2.5.7.tgz',
+43 silly install resolved     _from: 'ejs@latest',
+43 silly install resolved     _npmVersion: '3.10.8',
+43 silly install resolved     _nodeVersion: '6.9.1',
+43 silly install resolved     _npmUser: { name: 'mde', email: 'mde@fleegix.org' },
+43 silly install resolved     dist:
+43 silly install resolved      { shasum: 'cc872c168880ae3c7189762fd5ffc00896c9518a',
+43 silly install resolved        tarball: 'https://registry.npmjs.org/ejs/-/ejs-2.5.7.tgz' },
+43 silly install resolved     maintainers: [ [Object] ],
+43 silly install resolved     _npmOperationalInternal:
+43 silly install resolved      { host: 's3://npm-registry-packages',
+43 silly install resolved        tmp: 'tmp/ejs-2.5.7.tgz_1501385411193_0.3807816591579467' },
+43 silly install resolved     directories: {},
+43 silly install resolved     readme: 'ERROR: No README data found!' } ]
+44 info install ejs@2.5.7 into /home/pi/Desktop/nodejs
+45 info installOne ejs@2.5.7
+46 verbose installOne of ejs to /home/pi/Desktop/nodejs not in flight; installing
+47 verbose lock using /root/.npm/_locks/ejs-2a3e08ba1f5305ed.lock for /home/pi/Desktop/nodejs/node_modules/ejs
+48 silly install write writing ejs 2.5.7 to /home/pi/Desktop/nodejs/node_modules/ejs
+49 verbose unbuild node_modules/ejs
+50 info preuninstall ejs@2.5.7
+51 info uninstall ejs@2.5.7
+52 verbose unbuild rmStuff ejs@2.5.7 from /home/pi/Desktop/nodejs/node_modules
+53 info postuninstall ejs@2.5.7
+54 silly gentlyRm /home/pi/Desktop/nodejs/node_modules/ejs is being purged from base /home/pi/Desktop/nodejs
+55 verbose gentlyRm don't care about contents; nuking /home/pi/Desktop/nodejs/node_modules/ejs
+56 silly vacuum-fs purging /home/pi/Desktop/nodejs/node_modules/ejs
+57 silly vacuum-fs quitting because other entries in /home/pi/Desktop/nodejs/node_modules
+58 verbose tar unpack /root/.npm/ejs/2.5.7/package.tgz
+59 verbose tar unpacking to /home/pi/Desktop/nodejs/node_modules/ejs
+60 silly gentlyRm /home/pi/Desktop/nodejs/node_modules/ejs is being purged
+61 verbose gentlyRm don't care about contents; nuking /home/pi/Desktop/nodejs/node_modules/ejs
+62 silly gunzTarPerm modes [ '755', '644' ]
+63 silly gunzTarPerm extractEntry
+64 silly gunzTarPerm extractEntry ejs.js
+65 silly gunzTarPerm extractEntry ejs.min.js
+66 silly gunzTarPerm extractEntry Jakefile
+67 silly gunzTarPerm extractEntry lib/
+68 silly gunzTarPerm extractEntry LICENSE
+69 silly gunzTarPerm extractEntry package.json
+70 silly gunzTarPerm extractEntry README.md
+71 silly gunzTarPerm extractEntry lib/ejs.js
+72 silly gunzTarPerm extractEntry lib/utils.js
+73 verbose write writing to /home/pi/Desktop/nodejs/node_modules/ejs/package.json
+74 info preinstall ejs@2.5.7
+75 verbose readDependencies loading dependencies from /home/pi/Desktop/nodejs/node_modules/ejs/package.json
+76 verbose readDependencies loading dependencies from /home/pi/Desktop/nodejs/node_modules/ejs/package.json
+77 silly install resolved []
+78 verbose about to build /home/pi/Desktop/nodejs/node_modules/ejs
+79 info build /home/pi/Desktop/nodejs/node_modules/ejs
+80 info linkStuff ejs@2.5.7
+81 silly linkStuff ejs@2.5.7 has /home/pi/Desktop/nodejs/node_modules as its parent node_modules
+82 verbose linkBins ejs@2.5.7
+83 verbose linkMans ejs@2.5.7
+84 verbose rebuildBundles ejs@2.5.7
+85 info install ejs@2.5.7
+86 info postinstall ejs@2.5.7
+87 verbose unlock done using /root/.npm/_locks/ejs-2a3e08ba1f5305ed.lock for /home/pi/Desktop/nodejs/node_modules/ejs
+88 verbose validateInstall loading /home/pi/Desktop/nodejs/package.json for validation
+89 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/jscs requires minimatch@'~2.0.1' but will load
+89 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/minimatch,
+89 warn unmet dependency which is version 3.0.4
+90 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/mocha requires debug@'2.6.8' but will load
+90 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+90 warn unmet dependency which is version 2.6.9
+91 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/anymatch/node_modules/mocha requires debug@'2.2.0' but will load
+91 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+91 warn unmet dependency which is version 2.6.9
+92 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/anymatch/node_modules/micromatch/node_modules/gulp-istanbul requires istanbul@'^0.4.0' but will load
+92 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/istanbul,
+92 warn unmet dependency which is version 0.3.22
+93 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/karma requires connect@'^3.6.0' but will load
+93 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/connect,
+93 warn unmet dependency which is version 2.19.6
+94 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/mocha requires debug@'2.6.8' but will load
+94 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+94 warn unmet dependency which is version 2.6.9
+95 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/ms/node_modules/mocha requires debug@'2.6.0' but will load
+95 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+95 warn unmet dependency which is version 2.6.9
+96 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/minimatch/node_modules/tap/node_modules/coveralls requires js-yaml@'3.6.1' but will load
+96 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/minimatch/node_modules/tap/node_modules/js-yaml,
+96 warn unmet dependency which is version 3.10.0
+97 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/boxen/node_modules/string-width requires strip-ansi@'^4.0.0' but will load
+97 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+97 warn unmet dependency which is version 3.0.1
+98 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/boxen/node_modules/widest-line requires string-width@'^1.0.1' but will load
+98 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/boxen/node_modules/string-width,
+98 warn unmet dependency which is version 2.1.1
+99 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/boxen/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+99 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+99 warn unmet dependency which is version 3.0.1
+100 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi/node_modules/ava requires chalk@'^2.0.1' but will load
+100 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+100 warn unmet dependency which is version 1.1.3
+101 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+101 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+101 warn unmet dependency which is version 3.0.1
+102 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi/node_modules/ansi-regex/node_modules/ava requires update-notifier@'^1.0.0' but will load
+102 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+102 warn unmet dependency which is version 2.2.0
+103 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi/node_modules/ansi-regex/node_modules/xo requires update-notifier@'^1.0.0' but will load
+103 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+103 warn unmet dependency which is version 2.2.0
+104 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/nyc requires istanbul@'^0.3.19' but will load
+104 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/istanbul,
+104 warn unmet dependency which is version 0.2.16
+105 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/escape-string-regexp/node_modules/ava requires ansi-styles@'^3.1.0' but will load
+105 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/ansi-styles,
+105 warn unmet dependency which is version 2.2.1
+106 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/escape-string-regexp/node_modules/ava requires chalk@'^2.0.1' but will load
+106 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+106 warn unmet dependency which is version 1.1.3
+107 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/escape-string-regexp/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+107 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+107 warn unmet dependency which is version 3.0.1
+108 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/escape-string-regexp/node_modules/ava requires supports-color@'^4.0.0' but will load
+108 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/supports-color,
+108 warn unmet dependency which is version 2.0.0
+109 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/standard/node_modules/mkdirp requires minimist@'0.0.8' but will load
+109 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/standard/node_modules/minimist,
+109 warn unmet dependency which is version 1.2.0
+110 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/ava requires figures@'^2.0.0' but will load
+110 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures,
+110 warn unmet dependency which is version 1.7.0
+111 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/object-assign/node_modules/ava requires update-notifier@'^1.0.0' but will load
+111 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+111 warn unmet dependency which is version 2.2.0
+112 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/object-assign/node_modules/xo requires update-notifier@'^1.0.0' but will load
+112 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+112 warn unmet dependency which is version 2.2.0
+113 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/xo-init requires execa@'^0.5.0' but will load
+113 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/execa,
+113 warn unmet dependency which is version 0.6.3
+114 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/xo requires eslint-config-xo@'^0.17.0' but will load
+114 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/eslint-config-xo,
+114 warn unmet dependency which is version 0.18.2
+115 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/xo requires eslint-plugin-ava@'^3.1.0' but will load
+115 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/eslint-plugin-ava,
+115 warn unmet dependency which is version 4.2.2
+116 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/xo requires eslint-plugin-unicorn@'^1.0.0' but will load
+116 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/eslint-plugin-unicorn,
+116 warn unmet dependency which is version 2.1.2
+117 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/xo requires update-notifier@'^1.0.0' but will load
+117 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+117 warn unmet dependency which is version 2.2.0
+118 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/xo requires xo-init@'^0.4.0' but will load
+118 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/xo/node_modules/xo-init,
+118 warn unmet dependency which is version 0.5.0
+119 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/require-uncached/node_modules/xo requires resolve-from@'^2.0.0' but will load
+119 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/require-uncached/node_modules/resolve-from,
+119 warn unmet dependency which is version 1.0.1
+120 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/require-uncached/node_modules/xo requires update-notifier@'^1.0.0' but will load
+120 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+120 warn unmet dependency which is version 2.2.0
+121 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/markdown-table/node_modules/eslint requires minimatch@'^2.0.1' but will load
+121 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/minimatch,
+121 warn unmet dependency which is version 3.0.4
+122 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/markdown-table/node_modules/eslint requires object-assign@'^2.0.0' but will load
+122 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/object-assign,
+122 warn unmet dependency which is version 4.1.1
+123 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/markdown-table/node_modules/jscs requires chalk@'~1.0.0' but will load
+123 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/markdown-table/node_modules/chalk,
+123 warn unmet dependency which is version 1.1.3
+124 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ignore-by-default/node_modules/figures/node_modules/markdown-table/node_modules/jscs requires minimatch@'~2.0.1' but will load
+124 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/minimatch,
+124 warn unmet dependency which is version 3.0.4
+125 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/node_modules/ava requires semver@'^5.3.0' but will load
+125 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/semver,
+125 warn unmet dependency which is version 4.3.6
+126 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/node_modules/ava requires update-notifier@'^1.0.0' but will load
+126 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+126 warn unmet dependency which is version 2.2.0
+127 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/node_modules/xo requires resolve-from@'^2.0.0' but will load
+127 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/resolve-from,
+127 warn unmet dependency which is version 1.0.1
+128 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/node_modules/xo requires update-notifier@'^1.0.0' but will load
+128 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+128 warn unmet dependency which is version 2.2.0
+129 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/semver/node_modules/tap requires supports-color@'^1.3.1' but will load
+129 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/supports-color,
+129 warn unmet dependency which is version 2.0.0
+130 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/semver/node_modules/uglify-js requires async@'~0.2.6' but will load
+130 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/async,
+130 warn unmet dependency which is version 1.4.2
+131 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/coveralls/node_modules/istanbul requires supports-color@'^3.1.0' but will load
+131 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/supports-color,
+131 warn unmet dependency which is version 2.0.0
+132 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/coveralls/node_modules/mocha requires debug@'2.2.0' but will load
+132 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+132 warn unmet dependency which is version 2.6.9
+133 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/coveralls/node_modules/mocha requires supports-color@'3.1.2' but will load
+133 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/supports-color,
+133 warn unmet dependency which is version 2.0.0
+134 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/coveralls/node_modules/snyk requires configstore@'^1.2.0' but will load
+134 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore,
+134 warn unmet dependency which is version 3.1.1
+135 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/coveralls/node_modules/snyk requires semver@'^5.1.0' but will load
+135 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/semver,
+135 warn unmet dependency which is version 4.3.6
+136 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/coveralls/node_modules/snyk requires update-notifier@'^0.5.0' but will load
+136 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+136 warn unmet dependency which is version 2.2.0
+137 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/ava requires chalk@'^2.0.1' but will load
+137 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+137 warn unmet dependency which is version 1.1.3
+138 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+138 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+138 warn unmet dependency which is version 3.0.1
+139 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/write-file-atomic/node_modules/require-inject/node_modules/tap requires signal-exit@'^2.0.0' but will load
+139 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/configstore/node_modules/write-file-atomic/node_modules/signal-exit,
+139 warn unmet dependency which is version 3.0.2
+140 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xdg-basedir/node_modules/ava requires chalk@'^2.0.1' but will load
+140 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+140 warn unmet dependency which is version 1.1.3
+141 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xdg-basedir/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+141 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+141 warn unmet dependency which is version 3.0.1
+142 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xdg-basedir/node_modules/require-uncached/node_modules/xo requires resolve-from@'^2.0.0' but will load
+142 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xdg-basedir/node_modules/require-uncached/node_modules/resolve-from,
+142 warn unmet dependency which is version 1.0.1
+143 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xdg-basedir/node_modules/require-uncached/node_modules/xo requires update-notifier@'^1.0.0' but will load
+143 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+143 warn unmet dependency which is version 2.2.0
+144 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/ember-cli requires broccoli-babel-transpiler@'^6.0.0' but will load
+144 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-babel-transpiler,
+144 warn unmet dependency which is version 5.7.2
+145 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/ember-cli requires broccoli-merge-trees@'^2.0.0' but will load
+145 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-merge-trees,
+145 warn unmet dependency which is version 1.2.4
+146 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/mocha requires debug@'2.0.0' but will load
+146 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+146 warn unmet dependency which is version 2.6.9
+147 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-merge-trees/node_modules/broccoli-fixture requires fixturify@'^0.2.0' but will load
+147 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-merge-trees/node_modules/fixturify,
+147 warn unmet dependency which is version 0.3.4
+148 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-merge-trees/node_modules/fixturify requires fs-extra@'^0.30.0' but will load
+148 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-merge-trees/node_modules/fs-extra,
+148 warn unmet dependency which is version 1.0.0
+149 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-merge-trees/node_modules/mocha requires debug@'2.2.0' but will load
+149 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+149 warn unmet dependency which is version 2.6.9
+150 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-rollup/node_modules/broccoli requires connect@'^3.3.3' but will load
+150 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/connect,
+150 warn unmet dependency which is version 2.19.6
+151 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-rollup/node_modules/mocha requires debug@'2.2.0' but will load
+151 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+151 warn unmet dependency which is version 2.6.9
+152 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/connect/node_modules/connect-timeout requires debug@'0.8.1' but will load
+152 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/connect/node_modules/debug,
+152 warn unmet dependency which is version 1.0.2
+153 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/connect/node_modules/express-session requires debug@'0.8.1' but will load
+153 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/connect/node_modules/debug,
+153 warn unmet dependency which is version 1.0.2
+154 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/connect/node_modules/istanbul requires async@'0.8.x' but will load
+154 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/async,
+154 warn unmet dependency which is version 1.4.2
+155 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/connect/node_modules/mocha requires jade@'0.26.3' but will load
+155 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/connect/node_modules/jade,
+155 warn unmet dependency which is version 0.35.0
+156 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-uglify-js/node_modules/uglify-js requires async@'~0.2.6' but will load
+156 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/async,
+156 warn unmet dependency which is version 1.4.2
+157 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise/node_modules/broccoli-watchify/node_modules/mocha requires debug@'2.6.8' but will load
+157 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+157 warn unmet dependency which is version 2.6.9
+158 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/istanbul/node_modules/escodegen requires esprima@'~1.1.1' but will load
+158 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/istanbul/node_modules/esprima,
+158 warn unmet dependency which is version 1.2.5
+159 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/istanbul/node_modules/fileset requires minimatch@'0.x' but will load
+159 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/minimatch,
+159 warn unmet dependency which is version 3.0.4
+160 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/istanbul/node_modules/js-yaml requires esprima@'^4.0.0' but will load
+160 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/istanbul/node_modules/esprima,
+160 warn unmet dependency which is version 1.2.5
+161 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/istanbul/node_modules/coveralls requires js-yaml@'3.6.1' but will load
+161 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/istanbul/node_modules/js-yaml,
+161 warn unmet dependency which is version 3.10.0
+162 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/istanbul/node_modules/jshint requires minimatch@'1.0.x' but will load
+162 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/minimatch,
+162 warn unmet dependency which is version 3.0.4
+163 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/resolve-from/node_modules/ava requires ansi-styles@'^3.1.0' but will load
+163 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/ansi-styles,
+163 warn unmet dependency which is version 2.2.1
+164 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/resolve-from/node_modules/ava requires chalk@'^2.0.1' but will load
+164 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+164 warn unmet dependency which is version 1.1.3
+165 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/resolve-from/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+165 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+165 warn unmet dependency which is version 3.0.1
+166 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/resolve-from/node_modules/ava requires supports-color@'^4.0.0' but will load
+166 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/supports-color,
+166 warn unmet dependency which is version 2.0.0
+167 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/log-symbols requires chalk@'^1.0.0' but will load
+167 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/chalk,
+167 warn unmet dependency which is version 0.5.1
+168 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/ava requires each-async@'^0.1.3' but will load
+168 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/each-async,
+168 warn unmet dependency which is version 1.1.1
+169 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/chalk/node_modules/has-ansi requires ansi-regex@'^0.2.0' but will load
+169 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex,
+169 warn unmet dependency which is version 2.1.1
+170 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/chalk/node_modules/strip-ansi requires ansi-regex@'^0.2.1' but will load
+170 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex,
+170 warn unmet dependency which is version 2.1.1
+171 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/require-uncached/node_modules/ava requires ansi-styles@'^3.1.0' but will load
+171 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/ansi-styles,
+171 warn unmet dependency which is version 2.2.1
+172 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/require-uncached/node_modules/ava requires chalk@'^2.0.1' but will load
+172 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+172 warn unmet dependency which is version 1.1.3
+173 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/require-uncached/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+173 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+173 warn unmet dependency which is version 3.0.1
+174 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/require-uncached/node_modules/ava requires supports-color@'^4.0.0' but will load
+174 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/supports-color,
+174 warn unmet dependency which is version 2.0.0
+175 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/require-uncached/node_modules/xo requires resolve-from@'^2.0.0' but will load
+175 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/resolve-from,
+175 warn unmet dependency which is version 1.0.1
+176 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk/node_modules/require-uncached/node_modules/xo requires update-notifier@'^1.0.0' but will load
+176 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+176 warn unmet dependency which is version 2.2.0
+177 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/import-lazy/node_modules/ava requires chalk@'^2.0.1' but will load
+177 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+177 warn unmet dependency which is version 1.1.3
+178 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/import-lazy/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+178 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+178 warn unmet dependency which is version 3.0.1
+179 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/is-npm/node_modules/ava requires chalk@'^0.5.0' but will load
+179 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+179 warn unmet dependency which is version 1.1.3
+180 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/latest-version/node_modules/ava requires chalk@'^2.0.1' but will load
+180 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+180 warn unmet dependency which is version 1.1.3
+181 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/latest-version/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+181 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+181 warn unmet dependency which is version 3.0.1
+182 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/got/node_modules/ava requires update-notifier@'^1.0.0' but will load
+182 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+182 warn unmet dependency which is version 2.2.0
+183 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/latest-version/node_modules/package-json/node_modules/registry-auth-token/node_modules/mocha requires debug@'2.6.8' but will load
+183 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+183 warn unmet dependency which is version 2.6.9
+184 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/eslint-formatter-pretty requires chalk@'^2.1.0' but will load
+184 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+184 warn unmet dependency which is version 1.1.3
+185 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/xo-init requires execa@'^0.5.0' but will load
+185 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/execa,
+185 warn unmet dependency which is version 0.6.3
+186 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/ava requires chalk@'^2.0.1' but will load
+186 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+186 warn unmet dependency which is version 1.1.3
+187 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/ava requires resolve-cwd@'^2.0.0' but will load
+187 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/resolve-cwd,
+187 warn unmet dependency which is version 1.0.0
+188 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+188 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+188 warn unmet dependency which is version 3.0.1
+189 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/xo requires eslint-config-xo@'^0.17.0' but will load
+189 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/eslint-config-xo,
+189 warn unmet dependency which is version 0.18.2
+190 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/xo requires eslint-plugin-ava@'^3.1.0' but will load
+190 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/eslint-plugin-ava,
+190 warn unmet dependency which is version 4.2.2
+191 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/xo requires eslint-plugin-unicorn@'^1.0.0' but will load
+191 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/eslint-plugin-unicorn,
+191 warn unmet dependency which is version 2.1.2
+192 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/xo requires update-notifier@'^1.0.0' but will load
+192 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+192 warn unmet dependency which is version 2.2.0
+193 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/xo requires xo-init@'^0.4.0' but will load
+193 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/xo/node_modules/xo-init,
+193 warn unmet dependency which is version 0.5.0
+194 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/clear-module/node_modules/ava requires chalk@'^2.0.1' but will load
+194 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/chalk,
+194 warn unmet dependency which is version 1.1.3
+195 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/clear-module/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+195 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier/node_modules/strip-ansi,
+195 warn unmet dependency which is version 3.0.1
+196 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/coveralls/node_modules/mocha requires debug@'2.2.0' but will load
+196 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+196 warn unmet dependency which is version 2.6.9
+197 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/coveralls/node_modules/sinon-restore requires sinon@'1.5.2' but will load
+197 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/sinon,
+197 warn unmet dependency which is version 1.17.7
+198 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/coveralls/node_modules/snyk requires update-notifier@'^0.5.0' but will load
+198 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+198 warn unmet dependency which is version 2.2.0
+199 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/karma-phantomjs-launcher/node_modules/phantomjs-prebuilt requires es6-promise@'~4.0.3' but will load
+199 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/es6-promise,
+199 warn unmet dependency which is version 3.3.1
+200 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/karma-phantomjs-launcher/node_modules/grunt requires async@'~0.1.22' but will load
+200 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/async,
+200 warn unmet dependency which is version 1.4.2
+201 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/karma-phantomjs-launcher/node_modules/grunt requires coffee-script@'~1.3.3' but will load
+201 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/coffee-script,
+201 warn unmet dependency which is version 1.7.1
+202 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/karma-phantomjs-launcher/node_modules/grunt requires minimatch@'~0.2.12' but will load
+202 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/minimatch,
+202 warn unmet dependency which is version 3.0.4
+203 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/karma-phantomjs-launcher/node_modules/grunt requires rimraf@'~2.2.8' but will load
+203 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/rimraf,
+203 warn unmet dependency which is version 2.6.2
+204 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/karma-phantomjs-launcher/node_modules/grunt requires lodash@'~0.9.2' but will load
+204 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/karma-phantomjs-launcher/node_modules/lodash,
+204 warn unmet dependency which is version 4.17.4
+205 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/karma-phantomjs-launcher/node_modules/grunt-karma requires lodash@'^3.10.1' but will load
+205 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug/node_modules/karma-phantomjs-launcher/node_modules/lodash,
+205 warn unmet dependency which is version 4.17.4
+206 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/glob-parent/node_modules/mocha requires debug@'2.2.0' but will load
+206 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+206 warn unmet dependency which is version 2.6.9
+207 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/coveralls/node_modules/mocha requires debug@'2.2.0' but will load
+207 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+207 warn unmet dependency which is version 2.6.9
+208 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/coveralls/node_modules/sinon-restore requires sinon@'1.5.2' but will load
+208 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/sinon,
+208 warn unmet dependency which is version 1.17.7
+209 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/coveralls/node_modules/snyk requires update-notifier@'^0.5.0' but will load
+209 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+209 warn unmet dependency which is version 2.2.0
+210 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/is-binary-path/node_modules/binary-extensions/node_modules/ava requires update-notifier@'^1.0.0' but will load
+210 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+210 warn unmet dependency which is version 2.2.0
+211 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/is-binary-path/node_modules/ava/node_modules/ava requires each-async@'^0.1.3' but will load
+211 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/is-binary-path/node_modules/ava/node_modules/each-async,
+211 warn unmet dependency which is version 1.1.1
+212 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/is-binary-path/node_modules/ava/node_modules/log-symbols/node_modules/ava requires chalk@'^0.5.1' but will load
+212 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/is-binary-path/node_modules/ava/node_modules/log-symbols/node_modules/chalk,
+212 warn unmet dependency which is version 1.1.3
+213 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/chokidar/node_modules/path-is-absolute/node_modules/xo requires update-notifier@'^1.0.0' but will load
+213 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+213 warn unmet dependency which is version 2.2.0
+214 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/commitizen requires babel@'5.8.29' but will load
+214 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/babel,
+214 warn unmet dependency which is version 5.8.23
+215 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/commitizen requires chalk@'1.1.1' but will load
+215 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk,
+215 warn unmet dependency which is version 1.1.3
+216 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/commitizen requires nodemon@'1.8.1' but will load
+216 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon,
+216 warn unmet dependency which is version 1.12.1
+217 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/commitizen requires rimraf@'2.4.3' but will load
+217 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/rimraf,
+217 warn unmet dependency which is version 2.6.2
+218 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/eslint requires minimatch@'^2.0.1' but will load
+218 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/minimatch,
+218 warn unmet dependency which is version 3.0.4
+219 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/escape-string-regexp/node_modules/ava requires ansi-styles@'^3.1.0' but will load
+219 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/ansi-styles,
+219 warn unmet dependency which is version 2.2.1
+220 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/escape-string-regexp/node_modules/ava requires chalk@'^2.0.1' but will load
+220 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk,
+220 warn unmet dependency which is version 1.1.3
+221 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/escape-string-regexp/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+221 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi,
+221 warn unmet dependency which is version 3.0.1
+222 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/escape-string-regexp/node_modules/ava requires supports-color@'^4.0.0' but will load
+222 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/supports-color,
+222 warn unmet dependency which is version 2.0.0
+223 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi/node_modules/ava requires ansi-styles@'^3.1.0' but will load
+223 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/ansi-styles,
+223 warn unmet dependency which is version 2.2.1
+224 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi/node_modules/ava requires chalk@'^2.0.1' but will load
+224 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk,
+224 warn unmet dependency which is version 1.1.3
+225 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+225 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi,
+225 warn unmet dependency which is version 3.0.1
+226 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi/node_modules/ava requires supports-color@'^4.0.0' but will load
+226 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/supports-color,
+226 warn unmet dependency which is version 2.0.0
+227 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/node_modules/ava requires semver@'^5.3.0' but will load
+227 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/semver,
+227 warn unmet dependency which is version 4.3.6
+228 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/node_modules/ava requires update-notifier@'^1.0.0' but will load
+228 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+228 warn unmet dependency which is version 2.2.0
+229 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/node_modules/xo requires resolve-from@'^2.0.0' but will load
+229 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/resolve-from,
+229 warn unmet dependency which is version 1.0.1
+230 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi/node_modules/ansi-regex/node_modules/xo requires update-notifier@'^1.0.0' but will load
+230 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+230 warn unmet dependency which is version 2.2.0
+231 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/semver/node_modules/tap requires supports-color@'^1.3.1' but will load
+231 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/supports-color,
+231 warn unmet dependency which is version 2.0.0
+232 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/semver/node_modules/uglify-js requires async@'~0.2.6' but will load
+232 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/async,
+232 warn unmet dependency which is version 1.4.2
+233 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/resolve-from/node_modules/ava requires ansi-styles@'^3.1.0' but will load
+233 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/ansi-styles,
+233 warn unmet dependency which is version 2.2.1
+234 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/resolve-from/node_modules/ava requires chalk@'^2.0.1' but will load
+234 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk,
+234 warn unmet dependency which is version 1.1.3
+235 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/resolve-from/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+235 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi,
+235 warn unmet dependency which is version 3.0.1
+236 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/resolve-from/node_modules/ava requires supports-color@'^4.0.0' but will load
+236 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/supports-color,
+236 warn unmet dependency which is version 2.0.0
+237 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/node_modules/ava requires semver@'^5.3.0' but will load
+237 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/semver,
+237 warn unmet dependency which is version 4.3.6
+238 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/node_modules/ava requires update-notifier@'^1.0.0' but will load
+238 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+238 warn unmet dependency which is version 2.2.0
+239 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/node_modules/xo requires resolve-from@'^2.0.0' but will load
+239 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/resolve-from,
+239 warn unmet dependency which is version 1.0.1
+240 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ansi-regex/node_modules/xo requires update-notifier@'^1.0.0' but will load
+240 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+240 warn unmet dependency which is version 2.2.0
+241 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/chalk requires ansi-styles@'^1.1.0' but will load
+241 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/ansi-styles,
+241 warn unmet dependency which is version 2.2.1
+242 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/chalk requires has-ansi@'^0.1.0' but will load
+242 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi,
+242 warn unmet dependency which is version 2.0.0
+243 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/chalk requires strip-ansi@'^0.3.0' but will load
+243 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi,
+243 warn unmet dependency which is version 3.0.1
+244 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/chalk requires supports-color@'^0.2.0' but will load
+244 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/supports-color,
+244 warn unmet dependency which is version 2.0.0
+245 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/log-symbols requires chalk@'^1.0.0' but will load
+245 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/chalk,
+245 warn unmet dependency which is version 0.5.1
+246 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/ava requires each-async@'^0.1.3' but will load
+246 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/has-ansi/node_modules/ava/node_modules/each-async,
+246 warn unmet dependency which is version 1.1.1
+247 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/eslint-formatter-pretty requires chalk@'^2.1.0' but will load
+247 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk,
+247 warn unmet dependency which is version 1.1.3
+248 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/xo-init requires execa@'^0.5.0' but will load
+248 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/execa,
+248 warn unmet dependency which is version 0.6.3
+249 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/ava requires ansi-styles@'^3.1.0' but will load
+249 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/ansi-styles,
+249 warn unmet dependency which is version 2.2.1
+250 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/ava requires chalk@'^2.0.1' but will load
+250 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk,
+250 warn unmet dependency which is version 1.1.3
+251 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/ava requires resolve-cwd@'^2.0.0' but will load
+251 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/resolve-cwd,
+251 warn unmet dependency which is version 1.0.0
+252 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+252 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi,
+252 warn unmet dependency which is version 3.0.1
+253 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/ava requires supports-color@'^4.0.0' but will load
+253 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/supports-color,
+253 warn unmet dependency which is version 2.0.0
+254 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/xo requires eslint-config-xo@'^0.17.0' but will load
+254 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/eslint-config-xo,
+254 warn unmet dependency which is version 0.18.2
+255 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/xo requires eslint-plugin-ava@'^3.1.0' but will load
+255 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/eslint-plugin-ava,
+255 warn unmet dependency which is version 4.2.2
+256 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/xo requires eslint-plugin-unicorn@'^1.0.0' but will load
+256 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/eslint-plugin-unicorn,
+256 warn unmet dependency which is version 2.1.2
+257 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/xo requires update-notifier@'^1.0.0' but will load
+257 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+257 warn unmet dependency which is version 2.2.0
+258 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/xo requires xo-init@'^0.4.0' but will load
+258 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/xo/node_modules/xo-init,
+258 warn unmet dependency which is version 0.5.0
+259 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/require-uncached/node_modules/ava requires ansi-styles@'^3.1.0' but will load
+259 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/ansi-styles,
+259 warn unmet dependency which is version 2.2.1
+260 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/require-uncached/node_modules/ava requires chalk@'^2.0.1' but will load
+260 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk,
+260 warn unmet dependency which is version 1.1.3
+261 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/require-uncached/node_modules/ava requires strip-ansi@'^4.0.0' but will load
+261 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/strip-ansi,
+261 warn unmet dependency which is version 3.0.1
+262 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/require-uncached/node_modules/ava requires supports-color@'^4.0.0' but will load
+262 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/supports-color,
+262 warn unmet dependency which is version 2.0.0
+263 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/require-uncached/node_modules/xo requires resolve-from@'^2.0.0' but will load
+263 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/resolve-from,
+263 warn unmet dependency which is version 1.0.1
+264 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk/node_modules/require-uncached/node_modules/xo requires update-notifier@'^1.0.0' but will load
+264 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+264 warn unmet dependency which is version 2.2.0
+265 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/cz-conventional-changelog/node_modules/commitizen requires chalk@'1.1.1' but will load
+265 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk,
+265 warn unmet dependency which is version 1.1.3
+266 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/cz-conventional-changelog/node_modules/commitizen requires cz-conventional-changelog@'1.1.1' but will load
+266 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/cz-conventional-changelog,
+266 warn unmet dependency which is version 1.1.4
+267 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/eslint-config-kentcdodds/node_modules/commitizen requires chalk@'1.1.1' but will load
+267 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/chalk,
+267 warn unmet dependency which is version 1.1.3
+268 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/eslint-config-kentcdodds/node_modules/commitizen requires cz-conventional-changelog@'1.1.1' but will load
+268 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/eslint-config-kentcdodds/node_modules/cz-conventional-changelog,
+268 warn unmet dependency which is version 1.1.2
+269 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/cross-env/node_modules/sinon-chai/node_modules/mocha requires debug@'2.0.0' but will load
+269 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+269 warn unmet dependency which is version 2.6.9
+270 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/precommit/node_modules/esbeautifier requires write@'^0.2.0' but will load
+270 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/precommit/node_modules/write,
+270 warn unmet dependency which is version 0.1.1
+271 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/ps-tree/node_modules/precommit/node_modules/watch-spawn requires debug@'~0.7.4' but will load
+271 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+271 warn unmet dependency which is version 2.6.9
+272 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/glob requires minimatch@'~0.2.11' but will load
+272 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/minimatch,
+272 warn unmet dependency which is version 3.0.4
+273 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/jade requires commander@'0.6.1' but will load
+273 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/commander,
+273 warn unmet dependency which is version 2.3.0
+274 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/jade requires mkdirp@'0.3.0' but will load
+274 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/mkdirp,
+274 warn unmet dependency which is version 0.5.0
+275 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/browserify requires glob@'^4.0.5' but will load
+275 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/glob,
+275 warn unmet dependency which is version 3.2.3
+276 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/browserify requires through2@'^1.0.0' but will load
+276 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/through2,
+276 warn unmet dependency which is version 0.6.5
+277 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/coffee-script requires mkdirp@'~0.3.5' but will load
+277 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/mkdirp,
+277 warn unmet dependency which is version 0.5.0
+278 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/eslint requires debug@'^2.1.1' but will load
+278 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/debug,
+278 warn unmet dependency which is version 2.0.0
+279 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/eslint requires glob@'^5.0.14' but will load
+279 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/mocha/node_modules/glob,
+279 warn unmet dependency which is version 3.2.3
+280 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/touch/node_modules/tap/node_modules/coveralls requires js-yaml@'3.6.1' but will load
+280 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/touch/node_modules/tap/node_modules/js-yaml,
+280 warn unmet dependency which is version 3.10.0
+281 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/should/node_modules/gulp requires gulp-util@'^3.0.0' but will load
+281 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/should/node_modules/gulp-util,
+281 warn unmet dependency which is version 2.2.20
+282 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/should/node_modules/gulp-uglify requires gulp-util@'>=3.0.0 <4.0.0-0' but will load
+282 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/should/node_modules/gulp-util,
+282 warn unmet dependency which is version 2.2.20
+283 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/should/node_modules/mocha requires debug@'2.0.0' but will load
+283 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+283 warn unmet dependency which is version 2.6.9
+284 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/should/node_modules/zuul requires browserify@'6.3.3' but will load
+284 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/should/node_modules/browserify,
+284 warn unmet dependency which is version 14.4.0
+285 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/should/node_modules/zuul requires debug@'2.1.0' but will load
+285 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+285 warn unmet dependency which is version 2.6.9
+286 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/should/node_modules/zuul requires express@'3.4.8' but will load
+286 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/express,
+286 warn unmet dependency which is version 4.16.2
+287 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/npmconf requires semver@'2 || 3 || 4' but will load
+287 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/semver,
+287 warn unmet dependency which is version 5.4.1
+288 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/nock requires debug@'^1.0.4' but will load
+288 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+288 warn unmet dependency which is version 2.6.9
+289 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/nock requires lodash@'2.4.1' but will load
+289 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/lodash,
+289 warn unmet dependency which is version 3.10.1
+290 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/npm-registry-couchapp requires semver@'4' but will load
+290 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/semver,
+290 warn unmet dependency which is version 5.4.1
+291 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/nyc requires istanbul@'^0.3.19' but will load
+291 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/istanbul,
+291 warn unmet dependency which is version 0.2.16
+292 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/semver/node_modules/tap requires nyc@'^11.1.0' but will load
+292 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/nyc,
+292 warn unmet dependency which is version 3.2.2
+293 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/rimraf/node_modules/tap requires nyc@'^11.1.0' but will load
+293 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/nyc,
+293 warn unmet dependency which is version 3.2.2
+294 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/parse-github-repo-url/node_modules/mocha requires debug@'2.0.0' but will load
+294 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+294 warn unmet dependency which is version 2.6.9
+295 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/parse-github-repo-url/node_modules/mocha requires mkdirp@'0.5.0' but will load
+295 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/semantic-release/node_modules/mkdirp,
+295 warn unmet dependency which is version 0.5.1
+296 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/xo-init requires execa@'^0.5.0' but will load
+296 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/execa,
+296 warn unmet dependency which is version 0.6.3
+297 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/ava requires resolve-cwd@'^2.0.0' but will load
+297 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/resolve-cwd,
+297 warn unmet dependency which is version 1.0.0
+298 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/xo requires eslint-config-xo@'^0.17.0' but will load
+298 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/eslint-config-xo,
+298 warn unmet dependency which is version 0.18.2
+299 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/xo requires eslint-plugin-ava@'^3.1.0' but will load
+299 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/eslint-plugin-ava,
+299 warn unmet dependency which is version 4.2.2
+300 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/xo requires eslint-plugin-unicorn@'^1.0.0' but will load
+300 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/eslint-plugin-unicorn,
+300 warn unmet dependency which is version 2.1.2
+301 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/xo requires update-notifier@'^1.0.0' but will load
+301 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+301 warn unmet dependency which is version 2.2.0
+302 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/xo requires xo-init@'^0.4.0' but will load
+302 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/config-angular/node_modules/@commitlint/utils/node_modules/xo/node_modules/xo-init,
+302 warn unmet dependency which is version 0.5.0
+303 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/ava requires chalk@'^1.0.0' but will load
+303 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/chalk,
+303 warn unmet dependency which is version 2.1.0
+304 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/ava requires update-notifier@'^1.0.0' but will load
+304 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+304 warn unmet dependency which is version 2.2.0
+305 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/chalk/node_modules/nyc requires resolve-from@'^2.0.0' but will load
+305 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/chalk/node_modules/resolve-from,
+305 warn unmet dependency which is version 3.0.0
+306 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/babel-polyfill/node_modules/babel-runtime requires regenerator-runtime@'^0.11.0' but will load
+306 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/babel-polyfill/node_modules/regenerator-runtime,
+306 warn unmet dependency which is version 0.10.5
+307 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/meow/node_modules/map-obj/node_modules/ava requires chalk@'^0.5.1' but will load
+307 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/chalk,
+307 warn unmet dependency which is version 2.1.0
+308 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/meow/node_modules/object-assign/node_modules/ava requires chalk@'^1.0.0' but will load
+308 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/chalk,
+308 warn unmet dependency which is version 2.1.0
+309 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/meow/node_modules/object-assign/node_modules/ava requires update-notifier@'^1.0.0' but will load
+309 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+309 warn unmet dependency which is version 2.2.0
+310 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/meow/node_modules/object-assign/node_modules/xo requires update-notifier@'^1.0.0' but will load
+310 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+310 warn unmet dependency which is version 2.2.0
+311 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/meow/node_modules/redent/node_modules/strip-indent requires get-stdin@'^4.0.1' but will load
+311 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/get-stdin,
+311 warn unmet dependency which is version 5.0.1
+312 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/resolve-bin/node_modules/mocha requires mkdirp@'0.3.5' but will load
+312 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/mkdirp,
+312 warn unmet dependency which is version 0.5.1
+313 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/eslint requires chalk@'^1.1.3' but will load
+313 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/chalk,
+313 warn unmet dependency which is version 2.1.0
+314 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/xo-init requires execa@'^0.5.0' but will load
+314 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/execa,
+314 warn unmet dependency which is version 0.6.3
+315 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/xo requires eslint-config-xo@'^0.17.0' but will load
+315 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/eslint-config-xo,
+315 warn unmet dependency which is version 0.18.2
+316 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/xo requires eslint-plugin-ava@'^3.1.0' but will load
+316 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/eslint-plugin-ava,
+316 warn unmet dependency which is version 4.2.2
+317 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/xo requires eslint-plugin-unicorn@'^1.0.0' but will load
+317 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/eslint-plugin-unicorn,
+317 warn unmet dependency which is version 2.1.2
+318 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/xo requires update-notifier@'^1.0.0' but will load
+318 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+318 warn unmet dependency which is version 2.2.0
+319 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/xo requires xo-init@'^0.4.0' but will load
+319 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/xo/node_modules/xo-init,
+319 warn unmet dependency which is version 0.5.0
+320 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/sander/node_modules/mocha requires debug@'2.6.8' but will load
+320 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/debug,
+320 warn unmet dependency which is version 2.6.9
+321 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/@commitlint/cli/node_modules/tmp/node_modules/os-tmpdir/node_modules/xo requires update-notifier@'^1.0.0' but will load
+321 warn unmet dependency /home/pi/Desktop/nodejs/node_modules/nodemon/node_modules/update-notifier,
+321 warn unmet dependency which is version 2.2.0
+322 verbose stack Error: The package grunt@0.4.5 does not satisfy its siblings' peerDependencies requirements!
+322 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+322 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+322 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+322 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+322 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+322 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+322 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+322 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+322 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+322 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+323 verbose cwd /home/pi/Desktop/nodejs
+324 error Linux 4.9.35-v7+
+325 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "ejs"
+326 error node v4.3.2
+327 error npm  v2.14.12
+328 error code EPEERINVALID
+329 error peerinvalid The package grunt@0.4.5 does not satisfy its siblings' peerDependencies requirements!
+329 error peerinvalid Peer grunt-auto-release@0.0.7 wants grunt@~1.0
+329 error peerinvalid Peer grunt-bump@0.3.4 wants grunt@>=0.4.0
+329 error peerinvalid Peer grunt-karma@1.0.0 wants grunt@>=0.4.x
+329 error peerinvalid Peer load-grunt-tasks@3.5.2 wants grunt@>=0.4.0
+330 verbose exit [ 1, true ]

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Raspberry</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="main.css" type="text/css">
+	</head>
+<div id="glavniContainer">
+	<body>
+		<div id="naslov">
+			Raspberry server
+		</div>
+		<br>
+		<p style="font-size:30px" >LED control</p>		
+		<br>
+		<br>
+		
+			<form action="/on">
+				<input type="submit" class="btn btn-primary btn-block btn-large" value="ON" />
+			</form>
+			<br>
+			<br>
+			<form action="/off">
+				<input type="submit" class="btn btn-danger btn-block" value="OFF" />
+			</form>
+			<br>
+			<br>
+		
+			<form action="/dht">
+				<input type="submit" onClick="dhtFun()" class="btn btn-warning btn-block" value="DHT sensor" />
+				
+			</form>
+	<label id="label" class="btn btn-warning btn-block" style = "font-size:30px;">Temperature: <%= temperature %>°C Humidity: <%= humidity%>% <br> <%=date.getHours()%>:<%=date.getMinutes()%> - <%= date.getDate()%>.<%= date.getMonth()%>.<%=date.getFullYear()%>.</label> 
+	<label id="date" style="font-size:30px;"> </label>
+	</div>
+	
+	<script>
+	var d = new Date();
+	let naslov = document.getElementById('naslov');
+    let sadrzaj = "Raspberry Server";
+    let time = sadrzaj.length*500 + 5000;
+    naslov.innerHTML = " ";
+    
+    function dhtFun(){ 
+		//document.getElementById('date').innerHTML = d.getDate();
+		}
+    
+    function Animacija(i)
+      {
+        if(i<sadrzaj.length)
+        {
+        naslov.innerHTML += sadrzaj[i]
+        i++;
+        setTimeout(function()
+        {
+          Animacija(i);
+        }, 500);
+      }
+    }
+    Animacija(0);
+    setInterval(
+      function()
+      {
+        naslov.innerHTML ="";
+        Animacija(0);
+      }, time);
+	</script>
+
+	</body>
+</html>
+

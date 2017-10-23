@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Raspberry</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<link rel="stylesheet" href="main.css" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+		<script type="text/javascript" src="jquery.js"></script>
+	</head>
+
+	<body>
+		<div id="naslov">
+			Raspberry server
+		</div>
+		<br>
+		<p>LED control</p>		
+		<br>
+		<br>
+		<div id="glavniContainer">
+			<form action="/on">
+				<input type="submit" class="btn btn-primary btn-block btn-large" value="ON" />
+			</form>
+			<br>
+			<br>
+			<form action="/off">
+				<input type="submit" class="btn btn-danger btn-block" value="OFF" />
+			</form>
+			<br>
+			<br>
+		
+		
+			<br>
+			<br>
+			<form action ="/dht">
+				<input type="button" class="btn btn-danger btn-block" value="DHT:" />
+				
+			</form>
+	<label id="label" style = "font-size:50px;"></label>
+	</div>
+
+	<script>
+		let naslov = document.getElementById('naslov');
+    let sadrzaj = "Raspberry Server";
+    let time = sadrzaj.length*500 + 5000;
+    naslov.innerHTML = " ";
+    function Animacija(i)
+      {
+        if(i<sadrzaj.length)
+        {
+        naslov.innerHTML += sadrzaj[i]
+        i++;
+        setTimeout(function()
+        {
+          Animacija(i);
+        }, 500);
+      }
+    }
+    Animacija(0);
+    setInterval(
+      function()
+      {
+        naslov.innerHTML ="";
+        Animacija(0);
+      }, time);
+      
+      
+      
+	</script>
+
+	</body>
+</html>
+
