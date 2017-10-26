@@ -27,7 +27,7 @@
 			<br>
 		
 			<form action="/dht">
-				<input type="submit" onClick="dhtFun()" class="btn btn-warning btn-block" value="DHT sensor" />
+				<input type="submit" class="btn btn-warning btn-block" value="DHT sensor" />
 				
 			</form>
 	<label id="label" class="btn btn-warning btn-block" style = "font-size:30px;">Temperature: <%= temperature %>°C Humidity: <%= humidity%>% <br> <%=date.getHours()%>:<%=date.getMinutes()%> - <%= date.getDate()%>.<%= date.getMonth()%>.<%=date.getFullYear()%>.</label> 
@@ -41,9 +41,6 @@
     let time = sadrzaj.length*500 + 5000;
     naslov.innerHTML = " ";
     
-    function dhtFun(){ 
-		//document.getElementById('date').innerHTML = d.getDate();
-		}
     
     function Animacija(i)
       {
