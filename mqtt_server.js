@@ -7,7 +7,7 @@ var settings = {
 var server = new mosca.Server(settings);
  
 server.on('clientConnected', function(client) {
-    console.log('client connected', client.id);
+    console.log('cient connected', client.id);
 });
  
 // fired when a message is received

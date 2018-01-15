@@ -3,7 +3,7 @@
 	<head>
 		<title>Raspberry</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-		<link rel="stylesheet" href="main.css" type="text/css">
+		<link rel="stylesheet" href="main.css"  type="text/css">
 	</head>
 <div id="glavniContainer">
 	<body>
@@ -28,7 +28,6 @@
 		
 			<form action="/dht">
 				<input type="submit" class="btn btn-warning btn-block" value="DHT sensor" />
-				
 			</form>
 	<label id="label" class="btn btn-warning btn-block" style = "font-size:30px;">Temperature: <%= temperature %>°C Humidity: <%= humidity%>% <br> <%=date.getHours()%>:<%=date.getMinutes()%> - <%= date.getDate()%>.<%= date.getMonth()%>.<%=date.getFullYear()%>.</label> 
 	<label id="date" style="font-size:30px;"> </label>

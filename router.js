@@ -7,7 +7,6 @@ var temperature = 0;
 var humidity = 0;
 var d = new Date();
 
-
 // define the home page route
 router.get('/', function (req, res) {
 		res.render('index',{temperature: temperature, humidity: humidity, date: d});
@@ -20,7 +19,7 @@ router.get('/on', function (req, res) {
 	
 			var message = {
 			topic: '/leds/led1',
-			payload: 'on', // or a Buffer
+			payload: '1', // or a Buffer
 			qos: 0, // 0, 1, or 2
 			retain: false // or true
 		};
@@ -39,7 +38,7 @@ router.get('/off', function (req, res) {
 	
 		var message = {
 			topic: '/leds/led1',
-			payload: 'off', // or a Buffer
+			payload: '0', // or a Buffer
 			qos: 0, // 0, 1, or 2
 			retain: false // or true
 		};
