@@ -1,16 +1,27 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": "test",
-  "main": "server.js",
+  "description": "",
+  "main": "app.js",
   "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mosca": "^2.6.0",
+    "node-cmd": "^3.0.0",
     "nodemon": "^1.12.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "ante",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ante93/nodejs_server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ante93/nodejs_server/issues"
+  },
+  "homepage": "https://github.com/ante93/nodejs_server#readme"
 }
